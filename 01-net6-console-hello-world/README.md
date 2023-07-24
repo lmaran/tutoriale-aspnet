@@ -7,4 +7,4 @@
 3. dotnet build (opțional)
 4. dotnet run
 
-Tutorial: https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code
+Sursa: https://learn.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio-code

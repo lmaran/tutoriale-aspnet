@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-net6-webapi-hello-world"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-net6-console-hello-world", "01-net6-console-hello-world\01-net6-console-hello-world.csproj", "{CABEC54B-05E8-4260-BE12-D00D6AEE2429}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-net6-webapi-azure-redis", "03-net6-webapi-azure-redis\03-net6-webapi-azure-redis.csproj", "{42361533-170F-4E76-8CF2-FC960763F790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CABEC54B-05E8-4260-BE12-D00D6AEE2429}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CABEC54B-05E8-4260-BE12-D00D6AEE2429}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CABEC54B-05E8-4260-BE12-D00D6AEE2429}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42361533-170F-4E76-8CF2-FC960763F790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42361533-170F-4E76-8CF2-FC960763F790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42361533-170F-4E76-8CF2-FC960763F790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42361533-170F-4E76-8CF2-FC960763F790}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
