@@ -6,7 +6,11 @@
 
 2. Crează o instanță de Redis în Azure portal (Type minim = Basic C0, 250MB, 15 Eur/lună)
 
-3. dotnet user-secrets init (declari un fișier, pe discul local, pentru salvarea info senzitive)
+3. declari un fișier, pe discul local, pentru salvarea info senzitive
+
+``` console
+dotnet user-secrets init 
+```
 
 4. dotnet user-secrets set CacheConnection "<cache name>.redis.cache.windows.net,abortConnect=false,ssl=true,allowAdmin=true,password=<primary-access-key>" (salvezi connectionString-ul de Redis pe disc);
 
@@ -19,6 +23,7 @@ var redisConnectionString = builder.Configuration["CacheConnection"].ToString();
 builder.Services.AddSingleton(async x => await RedisConnection.InitializeAsync(redisConnectionString));
 
 8. Adaugă în Controller:
+``` csharp
     private readonly ILogger<WeatherForecastController> _logger;
     private readonly Task<RedisConnection> _redisConnectionFactory;
     private RedisConnection _redisConnection;
@@ -51,6 +56,6 @@ builder.Services.AddSingleton(async x => await RedisConnection.InitializeAsync(r
         var isSuccess = command1Result == "PONG" && command3Result == value;
         return Ok($"Is success: {isSuccess}");
     }
-
+```
 
 Sursa: https://github.com/Azure-Samples/azure-cache-redis-samples/blob/main/quickstart/aspnet-core/ContosoTeamStats
